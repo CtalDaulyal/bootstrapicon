@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            padding: o 20px;
+            align-items: center;
+
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .logo img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        li:hover {
+            background-color: darkblue;
+        }
+
+        li:hover a {
+            color: white;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .dropdown {
+            position: absolute;
+            background-color: aquamarine;
+            top: 60px;
+            right: 340px;
+            display: none;
+        }
+
+        .dropdown li {
+            display: block;
+            color: gray;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: goldenrod;
+            /* background: linear-gradient(skyblue); */
+            position: relative;
+            /* margin-top: 10px; */
+
+        }
+        .box:hover .drop{
+           display: block;
+        }
+
+        .drop {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: opx;
+            bottom: 0px;
+            background-color: rgba(60, 60, 20, 1);
+            color: white;
+            text-align: center;
+            padding: 100px 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="20240220_182001.jpg" alt="logo">
+        </div>
+        <input type="search" name="search" id="search">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">product</a>
+                <ul class="dropdown">
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Laptop</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <div class="drop">
+                <h1>HEllo World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptatibus? Doloremque omnis
+                    inventore, ipsam dicta fugiat eveniet non ad accusantium asperiores dignissimos pariatur et itaque
+                    labore sequi, porro commodi. Debitis.</p>
+            </div>
+            <div class="box">
+                <div class="drop">
+                    <h1>HEllo World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptatibus? Doloremque omnis
+                        inventore, ipsam dicta fugiat eveniet non ad accusantium asperiores dignissimos pariatur et
+                        itaque labore sequi, porro commodi. Debitis.</p>
+                </div>
+                <div class="box">
+                    <div class="drop">
+                        <h1>HEllo World</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptatibus? Doloremque
+                            omnis inventore, ipsam dicta fugiat eveniet non ad accusantium asperiores dignissimos
+                            pariatur et itaque labore sequi, porro commodi. Debitis.</p>
+                    </div>
+                </div>
+</body>
+</body>
+
+</html>

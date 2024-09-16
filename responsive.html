@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpages</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* max-width: 1024px;
+            margin: auto; */
+        }
+        nav{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 30px;
+            align-items: center;
+        }
+        .nav-logo{
+            width: 60px;
+            height: 60px;
+            border-radius: 60%;
+        }
+        .nav-logo img{
+            width: 100%;
+            height: 100%;
+            border-radius: 60%;
+        }
+        nav ul{
+            display: flex;
+            padding: 30px;
+            list-style-type: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+            color: #88ff70;
+        }
+
+        .card{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+        .box{
+            width: 23%;
+            height: 600px;
+            background-color: #3f6be4;
+            /* display: flex; */
+            position: center;
+
+            margin: 10px 0;
+        }
+        .box:hover{
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+        }
+        .box-img{
+          width: 100%;
+          height: 100%;
+        
+        }
+        .box-img img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: cover;
+        }
+        .boximg{
+            width: 100%;
+            height: 500px;
+            text-align: center;
+
+        }
+        .boximg img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+          
+
+        }
+        .box-container{
+            padding: 10px 5px;
+        }
+     
+        .icon i{
+            color: yellow;
+
+        }
+        section .box{
+            display: flex;
+            width: 20%;
+        }
+        .btn{
+            background-color: #3dce96;
+            width: 130px;
+            width: 40px;
+            color: wheat;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            
+
+        }
+        
+
+        /* for  mobile icon */
+        @media sceen and (max-width:576px){
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="box-img">
+            <img src="logo.mega.jpeg" alt="logo">
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Product</a>
+            </li>
+            <li>
+                <a href="#">Category</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li class="mobileicon">
+                <i class="bi bi-list-stars"></i>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card">
+            <div class="box">
+                <div class="boximg">
+                    <img src="headset.jpg" alt="headset">
+                </div>
+
+            </div>
+            <div class="box-container">
+                <h3>Hawk Headset</h3>
+                <p>Rs $40k</p>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <button class="btn">View detail</button>
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </section>
+    </main>
+</body>
+</html>

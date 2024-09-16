@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .name:hover {
+            background-color: #ff69b4;
+        }
+
+        /* tr th:first-child{
+            background-color: gray;
+            color: wheat;
+        } */
+        /* tr:last-child {
+            background-color: #3614ce;
+            color: white;
+        } */
+         /* tr,
+         th 
+         } */
+
+        /* tr th:nth-child(3){
+            background-color: blue;
+            color: white;
+        } */
+        /* tr th:nth-child(3n){
+            background-color: cadetblue;
+            color: white;
+        } */
+        td:first-child {
+            background-color: royalblue;
+            color: wheat;
+        }
+
+        td {
+            background-color: royalblue;
+            color: wheat;
+        }
+
+        tr:first-child {
+            background-color: rgb(243, 33, 103) !important;
+            color: white;
+        }
+       /* th:first-child{
+        background-color: blueviolet;
+        color: white;
+       } */
+    
+       
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="2">Primary Number</th>
+            <th colspan="2">Address</th>
+            <th rowspan="2">Gmail</th>
+            <th rowspan="2">Phone</th>
+            <!-- <th>Ad</th> -->
+            <th rowspan="2">Education</th>
+            <th rowspan="2">Gender</th>
+            <th rowspan="2">Occupation</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Temporary Address</th>
+            <th>Permanent Address</th>
+            
+        </tr>
+        <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>Dhangadhi</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <!-- <td>Dhangadhi</td> -->
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>Dhangadhi</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <!-- <td>Dhangadhi</td> -->
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>Dhangadhi</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <!-- <td>Dhangadhi</td> -->
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <!-- <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class="name">Sheetal</td>
+            <td>Daulyal</td>
+            <td>9848661476</td>
+            <td>Kathmandu</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td> -->
+        </tr>
+        <!-- <tr>
+            <td class="name">Sujan Daulyal</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class="name">Nirajan Daulyal</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td class=""</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td>Sheetal Daulyal</td>
+            <td>sitaldaulyal@gmail.com</td>
+            <td>9704405499</td>
+            <td>Dhangadhi</td>
+            <td>+2 pass</td>
+            <td>Male</td>
+            <td>Web Developer</td>
+        </tr> -->
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudi Eement</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: blue;
+        
+        } p::first-line{
+            font-size: 50px;
+            color: aqua;
+        
+        }
+        ::selection{
+            background-color: lime;
+        }
+        p::before{
+           content: '';
+           height: 10px;
+           width: 60%;
+           background-color: rgb(86, 129, 115);
+           display: block;
+           margin: auto;
+           text-align: center;
+        }
+        p::after{
+            content: '';
+            font-size: 60px;
+            background-color: burlywood;
+            color: white;
+            display: block;
+            width: 60%;
+            height: 10px;
+            margin: auto;
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            text-shadow: -1px -1px 10px rgb(103, 100, 1000), 1px 1px 10px rgb(212, 78, 78);        
+        }
+        pre{
+            color: blue;
+            font-size: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Our Class</p>
+    <pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit exercitationem beatae, voluptate soluta sapiente quia delectus hic eos doloribus. Eos ullam, accusantium animi eveniet explicabo tempore cum veritatis quibusdam.</pre>
+</body>
+</html>
